@@ -10,7 +10,7 @@ public class FlowChart
 {
     public static void main(String[] args){
         char ts; // ts = 교통신호 입니다.
-        int s; // s = 속도 입니다.
+        double s; // s = 속도 입니다.
         
         s = 10;
         ts = ' ';
@@ -19,8 +19,17 @@ public class FlowChart
         System.out.println(s);
         
     }
-    public void signal(){
-        if(ts == ){}
+    public void signal(double s , char ts){
+        
+        if(ts == "green"){
+            s = s;
+        }
+        else if (ts == "yellow"){
+            s = s * 1.2;
+        }
+        else{
+            s = 0;
+        }
     }
     
 }

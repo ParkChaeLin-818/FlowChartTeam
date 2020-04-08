@@ -12,13 +12,11 @@ public class FlowChart
         double s; // s = 속도 입니다.
         
         s = 10;
-        signal(s,"green");
         
-        System.out.println(s);
-        
+        signal(s,"red");
     }
-    public void signal(double s , String ts){
-        signal(s,ts);
+    
+    public static void signal(double s , String ts){
         if(ts.equals("green")){
             s = s;
         }
@@ -28,6 +26,8 @@ public class FlowChart
         else{
             s = 0;
         }
+        
+        System.out.println(s);
     }
     
 }

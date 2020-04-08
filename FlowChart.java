@@ -1,5 +1,4 @@
 
-
 /**
  * 여기에 FlowChart 클래스 설명을 작성하십시오.
  * 
@@ -9,22 +8,21 @@
 public class FlowChart
 {
     public static void main(String[] args){
-        char ts; // ts = 교통신호 입니다.
+        String ts; // ts = 교통신호 입니다.
         double s; // s = 속도 입니다.
         
         s = 10;
-        ts = ' ';
+        signal(s,"green");
         
-        System.out.println(ts);
         System.out.println(s);
         
     }
-    public void signal(double s , char ts){
-        
-        if(ts == "green"){
+    public void signal(double s , String ts){
+        signal(s,ts);
+        if(ts.equals("green")){
             s = s;
         }
-        else if (ts == "yellow"){
+        else if (ts.equals("yellow")){
             s = s * 1.2;
         }
         else{
